@@ -1,4 +1,3 @@
-import Layout from "../../layouts/Layout/Layout";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -44,7 +43,7 @@ const Translator = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <h1 className="text-center mt-5"> Welcome to the translation page </h1>
                 
             <form className="w-50 m-auto mt-5" onSubmit={handleSubmit}>
@@ -73,7 +72,7 @@ const Translator = () => {
                     </div>
                 </div>
             }
-        </Layout>
+        </div>
     )
 }
 

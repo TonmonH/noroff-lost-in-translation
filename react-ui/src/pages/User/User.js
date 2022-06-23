@@ -1,4 +1,3 @@
-import Layout from "../../layouts/Layout/Layout";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,7 +36,7 @@ const User = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <div className="mt-5 mb-5">
                 <h1 className="text-center"> Welcome {storedUsername} </h1>
                 <h4 className="mb-3 mt-3 text-center"> Here are your latest translations: </h4>
@@ -72,7 +71,7 @@ const User = () => {
                     <button className="btn btn-danger" onClick={handleLogOutClick}> Log out</button>
                 </div>
             </div> 
-        </Layout>    
+        </div>    
     )
 }
 

@@ -1,4 +1,3 @@
-import Layout from "../../layouts/Layout/Layout";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,7 +28,7 @@ const Login = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <h1 className="mt-5">
                 Lost in translation
             </h1>
@@ -42,7 +41,7 @@ const Login = () => {
                     </div>
                 </div>
             </form>
-        </Layout>    
+        </div>    
     )
 }
 
